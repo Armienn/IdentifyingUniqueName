@@ -2,7 +2,7 @@
 
 (Draft)
 
-This is a form of identification, meant to be universally unique, usable by everyone and somewhat easy to remember. It consists of 36 digits, and may be textually represented in a few different manners:
+This is a form of identification meant to be universally unique, usable by everyone and somewhat easy to remember. It consists of 36 digits, and may be textually represented in a few different manners:
 
 - Number form: `000000-000000-000000-305300-181119-900312`
 - Name form: `datua-docedu-xaoci`
@@ -14,9 +14,9 @@ The most basic structure of an IDUN is `xxxxxx-xxxxxx-xxxxxx-xxxxxx-CCVxxx-xxxxx
 
 The structure of the current versions are:
 
-`rrrrrr-rrrrrr-rrrrrr-rrrrrr-cc0ddd-dddddd`: General purpose IDUN.  
-`rrrrrr-rrrrrr-rrrrrr-rrrrnn-cc1ddd-dddddd`: First group of nationally issued IDUN.  
-`rrrrrr-rrrrrr-rrrrrr-rrrrnn-cc2ddd-dddddd`: Second group of nationally issued IDUN.  
+`V = 0`: `rrrrrr-rrrrrr-rrrrrr-rrrrrr-cc0ddd-dddddd` - General purpose IDUN.  
+`V = 1`: `rrrrrr-rrrrrr-rrrrrr-rrrrnn-cc1ddd-dddddd` - First group of nationally issued IDUN.  
+`V = 2`: `rrrrrr-rrrrrr-rrrrrr-rrrrnn-cc2ddd-dddddd` - Second group of nationally issued IDUN.  
 `V = 3+`: Reserved for future uses.
 
 ## Segments
