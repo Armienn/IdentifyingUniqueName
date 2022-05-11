@@ -79,6 +79,10 @@ Some longer examples:
 - 00732 > abihi (alternatively bihi, in the same way that 00732 = 732)
 - 49224178 > lufiketo
 
+## Redundant IDUNs
+
+At times a person might be assigned different IDUNs by separate entities. When becoming aware of this, as a rule of thumb the IDUN which corresponds to the lowest number should be used going forward, and the other one discarded.
+
 ## Possible UUID Format
 
 UUIDs consist of 128 bits, of which 6-8 bits are used for version information, and IDUNs happen to fit nicely in 120 bits. A UUID version containing an IDUN could technically be defined.
