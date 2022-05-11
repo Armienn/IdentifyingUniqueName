@@ -4,9 +4,9 @@
 
 This is a form of identification, meant to be universally unique, usable by everyone and somewhat easy to remember. It consists of 36 digits, and may be textually represented in a few different manners:
 
-- All digits: `000000-000000-000000-305300-181119-900312`
-- All syllables: `datua-docedu-xaoci`
-- Mix: `datua-docedu-900312`
+- Number form: `000000-000000-000000-305300-181119-900312`
+- Name form: `datua-docedu-xaoci`
+- Mixed form: `datua-docedu-900312`
 
 ## Structure 
 
@@ -50,21 +50,21 @@ It is up to each nation whether to generate the `r`s randomly, or to use some ot
 
 An IDUN may be presented in three standard representations:
 
-### Decimal representation
+### Number Form
 
 This is simply the pure numbers, split into six parts by dashes:
 
 `000000-000000-000000-305300-181119-900312`
 
-### Syllabic representation
+### Name Form
 
 For this representation, the digits are converted to syllables via the scheme described in the conversion section below. Leading sections of zeroes are trimmed:
 
 `datua-docedu-xaoci`
 
-### Mixed representation
+### Mixed Form
 
-This is like the syllabic representation, except the final section is written in digits, as it is usually a date of birth:
+This is like the Name Form, except the final section is written as digits, as it is usually a date of birth:
 
 `datua-docedu-900312`
 
