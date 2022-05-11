@@ -4,10 +4,9 @@
 
 This is a form of identification, meant to be universally unique, usable by everyone and somewhat easy to remember. It consists of 36 digits, and may be textually represented in a few different manners:
 
-- All numbers: `000000-000000-000000-305300-181119-900312`
-- All words: `datua-docedu-xaoci`
-- Words + Birthdate: `datua-docedu-900312`
-
+- All digits: `000000-000000-000000-305300-181119-900312`
+- All syllables: `datua-docedu-xaoci`
+- Mix: `datua-docedu-900312`
 
 ## Structure 
 
@@ -82,7 +81,7 @@ Some longer examples:
 
 ## Possible UUID Format
 
-UUIDs consists of 128 bits, of which 6-8 bits are used for version information, and IDUNs happen to fit nicely in 120 bits. A UUID version containing an IDUN could technically be defined.
+UUIDs consist of 128 bits, of which 6-8 bits are used for version information, and IDUNs happen to fit nicely in 120 bits. A UUID version containing an IDUN could technically be defined.
 
 ## Privacy and Other Considerations
 
