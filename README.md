@@ -44,7 +44,7 @@ A rule of thumb as to how many initial digits you may set to zero: are you the o
 
 These are IDUNs to be issued by nations. Version 1 and 2 each has a list of which `nn` numbers correspond to which nation.
 
-It is up to each nation whether to generate the `r`s randomly, or to use some other scheme. In accordance with the study "The Introduction and Use of Personal Identification Numbers: The Data Protection Issues" commissioned by the Council of Europe, it is preferable to not encode any personal information in the number.
+It is up to each nation whether to generate the `r`s randomly, or to use some other scheme. In accordance with the study ["The Introduction and Use of Personal Identification Numbers: The Data Protection Issues"](https://rm.coe.int/16806845b3) commissioned by the Council of Europe, it is preferable to not encode any personal information in the number.
 
 ## Presentation
 
@@ -58,7 +58,7 @@ This is simply the pure numbers, split into six parts by dashes:
 
 ### Name Form
 
-For this representation, the digits are converted to syllables via the scheme described in the conversion section below. Leading sections of zeroes are trimmed:
+For this representation, the digits are converted to [syllabic numerals](https://github.com/Armienn/SyllabicNumerals) via the scheme described in the conversion section below. Leading sections of zeroes are trimmed:
 
 `datua-docedu-xaoci`
 
@@ -68,16 +68,16 @@ This is like the Name Form, except the final section is written as digits, as it
 
 `datua-docedu-900312`
 
-## Number to Word Conversion
+## Decimal to Syllabic Numeral Conversion
 
-The following describes the conversion from a two digit number to a two character syllable. Larger numbers may be converted by performing this conversion two digits at a time.
+The following is a short description of the how to generate syllabic numerals. More details can be found [here](https://github.com/Armienn/SyllabicNumerals).
 
 A number `n` between 0 and 99 is converted by finding `c = floor(n / 5)` and `v = n % 5`. A syllable is then constructed by taking first the character at index `c` in: `_bcdfghjklmnprstvwxz`, and then the character at index `v` in: `aeiou`. Thus from 19 we get `c = 3` and `v = 4`, which results in the syllable "du". The number 3 would result in "\_o", but "\_" can be safely be dropped, leaving "o".
 
 Some longer examples:
 - 488352 > lovomi
 - 00732 > abihi (alternatively bihi, in the same way that 00732 = 732)
-- 49224178 > lufiketo
+- 49024178 > luiketo
 
 ## Redundant IDUNs
 
